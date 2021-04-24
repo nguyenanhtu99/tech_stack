@@ -8,13 +8,14 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-    <SafeAreaProvider>
+  <SafeAreaProvider>
     <Provider store={createStore(reducers)}>
       
         <View>
           <Header
             containerStyle={{
-              backgroundColor: 'red'
+              backgroundColor: 'red',
+              height: 80
             }}
             leftComponent={{ icon: 'menu', color: 'white' }}
             rightComponent={{ icon: 'home', color: 'white'}}
@@ -23,7 +24,7 @@ const App = () => {
         </View>
       
     </Provider>
-    </SafeAreaProvider>
+  </SafeAreaProvider>
   )
 }
 
