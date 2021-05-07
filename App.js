@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import reducers from './src/reducers';
 import { Header } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import LibraryList from './src/components/LibraryList';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             rightComponent={{ icon: 'home', color: 'white'}}
             centerComponent={{ text: 'Tech Stack', style: { color: 'white', fontSize: 18 }}}
           />
+          <LibraryList/>
         </View>
       
     </Provider>
